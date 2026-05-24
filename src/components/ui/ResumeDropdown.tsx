@@ -31,7 +31,7 @@ export function ResumeDropdown({ variant = "navbar" }: ResumeDropdownProps) {
         </p>
         <div className="space-y-1">
           {resumeOptions.map((option) => (
-            
+             <a
               key={option.role}
               href={option.url}
               download
@@ -88,7 +88,7 @@ export function ResumeDropdown({ variant = "navbar" }: ResumeDropdownProps) {
           </div>
           <div className="p-2">
             {resumeOptions.map((option) => (
-              
+               <a
                 key={option.role}
                 href={option.url}
                 download
