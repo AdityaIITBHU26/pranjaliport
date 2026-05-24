@@ -1,10 +1,10 @@
 import { SiteConfig } from "~/types/data";
 
 export const siteConfig: SiteConfig = {
-  title: "Abhay Rana — Full Stack Developer",
+  title: "Pranjali Sakure — AI/ML Engineer & Data Scientist",
   description:
-    "Full Stack Developer specializing in React, Next.js, and Node.js. Building exceptional digital experiences with modern web technologies.",
-  url: "https://www.abhayrana.com",
+    "AI/ML Engineer and Data Scientist specializing in Machine Learning, Deep Learning, NLP, and Backend Development. Building intelligent solutions with Python, TensorFlow, and Scikit-learn.",
+  url: "https://www.pranjalisakure.com",
   ogImage: "/og-image.png",
-  author: "Abhay Rana",
+  author: "Pranjali Sakure",
 };

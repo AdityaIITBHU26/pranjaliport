@@ -6,6 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { navItems } from "~/data/navigation";
+import { ResumeDropdown } from "~/components/ui/ResumeDropdown";
 import { personalInfo } from "~/data/personal";
 import { useActiveSection } from "~/hooks/useActiveSection";
 import { cn } from "~/lib/cn";
@@ -54,14 +55,7 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <a
-              href={personalInfo.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3 py-1.5 text-sm font-medium rounded-xl text-red-400 hover:bg-red-500/10 transition-colors"
-            >
-              Resume
-            </a>
+           <ResumeDropdown variant="mobile" />
           </div>
 
           {/* Mobile toggle */}
@@ -106,15 +100,7 @@ export function Navbar() {
                   </Link>
                 );
               })}
-              <a
-                href={personalInfo.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsOpen(false)}
-                className="px-4 py-3 rounded-xl text-base font-bold transition-all text-red-400 hover:bg-red-500/10"
-              >
-                Resume
-              </a>
+              <ResumeDropdown variant="navbar" />
             </div>
           </motion.div>
         )}
