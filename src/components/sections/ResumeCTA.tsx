@@ -1,6 +1,7 @@
 "use client";
 
-import { ResumeDropdown } from "~/components/ui/ResumeDropdown";
+import { FileText } from "lucide-react";
+import { personalInfo } from "~/data/personal";
 import { AnimatedSection } from "~/components/ui/AnimatedSection";
 
 export function ResumeCTA() {
@@ -22,7 +23,15 @@ export function ResumeCTA() {
             and education.
           </p>
           <div className="mt-8">
-          <ResumeDropdown variant="cta" />
+            <a
+              href={personalInfo.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-medium text-red-400 rounded-lg border border-red-500/25 bg-red-500/[0.06] transition-all duration-300 hover:bg-red-500/10 hover:border-red-500/40 hover:text-red-300"
+            >
+              <FileText size={18} />
+              View Resume
+            </a>
           </div>
         </div>
       </div>
